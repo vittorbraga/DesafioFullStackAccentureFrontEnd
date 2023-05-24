@@ -79,27 +79,6 @@
           });
       },
   
-    //   refreshList() {
-    //     this.retrieveTutorials();
-    //     this.currentTutorial = null;
-    //     this.currentIndex = -1;
-    //   },
-  
-    //   setActiveTutorial(tutorial, index) {
-    //     this.currentTutorial = tutorial;
-    //     this.currentIndex = tutorial ? index : -1;
-    //   },
-  
-    //   removeAllTutorials() {
-    //     TutorialDataService.deleteAll()
-    //       .then(response => {
-    //         console.log(response.data);
-    //         this.refreshList();
-    //       })
-    //       .catch(e => {
-    //         console.log(e);
-    //       });
-    //   },
       searchCpf() {
         FornecedorDataService.findByCpf(this.cpf)
           .then(response => {
